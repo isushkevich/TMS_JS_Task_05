@@ -91,7 +91,7 @@ function INIT(arr) {
 }
 
 
-// 3. Первая функция должна принимать покупателя (как аргумент forEach: arr.forEach(functionName))
+// 3. Функция, принимающая покупателя
 const checkCustomer = customer => {
     let priceOfOne = pricePerBottle(customer.alcoholName);
     let totalOrder = priceTotal(customer.alcoholCount, priceOfOne);
