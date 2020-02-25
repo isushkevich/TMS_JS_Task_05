@@ -109,7 +109,7 @@ const checkCustomer = customer => {
 }
 
 // 4. Проверка возраста
-const isLegalDrinkingAge = age => age >= 18 ? true : false;
+const isLegalDrinkingAge = age => age >= 18;
 
 // 5. Стоимость алкоголя за штуку
 const pricePerBottle = alcName => alcoholStorage[alcName];
@@ -118,7 +118,7 @@ const pricePerBottle = alcName => alcoholStorage[alcName];
 const priceTotal = (quantity, price) => Number((quantity * price).toFixed(2));
 
 // 7. Хватит ли денег
-const isAbleToBuy = (balance, price) => balance >= price ? true : false;
+const isAbleToBuy = (balance, price) => balance >= price;
 
 
 INIT(clients);
